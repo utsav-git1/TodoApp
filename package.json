@@ -10,8 +10,12 @@
   },
   "dependencies": {
     "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-datepicker": "^4.11.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0"
+    "react-draggable": "^4.4.5",
+    "react-icons": "^4.8.0",
+    "react-sortable": "^2.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
