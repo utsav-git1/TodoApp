@@ -17,7 +17,6 @@ const TodoList = () => {
 
   useEffect(() => {
     localStorage.setItem("alltodos", JSON.stringify(todos));
-    console.log(todos);
   }, [todos]);
 
   const addTodo = (todo) => {
@@ -78,7 +77,13 @@ const TodoList = () => {
       <div
         className="slider"
         style={{
-          translate: isOpen ? "370px" : "200px",
+          translate: isOpen
+            ? window.matchMedia("(max-width: 780px)").matches
+              ? "100%"
+              : "370px"
+            : window.matchMedia("(max-width: 780px)").matches
+            ? "10px"
+            : "200px",
           opacity: isOpen ? 1 : 0,
         }}
       >
