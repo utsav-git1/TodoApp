@@ -87,8 +87,8 @@ h1 {
   color: white;
   font-weight: bold;
   background: linear-gradient(90deg,
-  rgba(93, 12, 255, 1) 0%,
-  rgba(155, 0, 250, 1) 100%);
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%);
 
   padding: 16px;
   border-radius: 5px;
@@ -140,6 +140,10 @@ h1 {
   position: relative;
   z-index: 10;
   opacity: 0.8;
+
+  @media screen and (min-width : 350px) and (max-width : 780px) {
+    width: 40%
+  }
 }
 
 .heading {
