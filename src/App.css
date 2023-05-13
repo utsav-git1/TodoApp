@@ -1,112 +1,153 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
-  }
-  
-  body {
-    background:lightgrey
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
 
-  }
-  .todo-app {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: 520px;
-    min-height: 600px;
-    background: #161a2b;
-    text-align: center;
-    margin: 128px auto;
-    border-radius: 10px;
-    padding-bottom: 32px;
-  }
-  
-  h1 {
-    margin: 32px 0;
-    color: #fff;
-    font-size: 24px;
-  }
-  
-  .todo-done {
-    text-decoration: line-through;
-    opacity: 0.4;
-  }
-  
-  .todo-form {
-    margin-bottom: 32px;
-  }
-  
-  .todo-input {
-    padding: 14px 32px 14px 16px;
-    border-radius: 4px 0 0 4px;
-    border: 2px solid #5d0cff;
-    outline: none;
-    width: 320px;
-    background: transparent;
-    color: #fff;
-  }
-  
-  .todo-input::placeholder {
-    color: #e2e2e2;
-  }
-  
-  .todo-button {
-    padding: 16px;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    outline: none;
-    background: linear-gradient(
-      90deg,
+body {
+  background: lightgrey
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 750px;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.todo-done {
+  text-decoration: line-through;
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: black;
+  font-weight: bold;
+  background: linear-gradient(90deg,
+      rgb(252, 250, 249) 0%,
+      rgb(12, 235, 235) 50%);
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(90deg,
       rgba(93, 12, 255, 1) 0%,
-      rgba(155, 0, 250, 1) 100%
-    );
-    color: #fff;
-    text-transform: capitalize;
-  }
-  
-  .todo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 4px auto;
-    color: black;
-    font-weight: bold;
-    background: linear-gradient(
-      90deg,
-      rgb(234, 239, 241) 0%,
-      rgb(152, 155, 155) 50%
-    );
-  
-    padding: 16px;
-    border-radius: 5px;
-    width: 90%;
-  }
-  
-  .todo:nth-child(2n + 1) {
-    color:white;
-    font-weight: bold;
-    background: linear-gradient(
-      90deg,
-      rgba(93, 12, 255, 1) 0%,
-      rgba(155, 0, 250, 1) 100%
-    );
-  }
-  
-  .icons {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .delete-icon {
-    color: #fff;
-  }
-  
-  .edit-icon {
-    margin-right: 5px;
-    color: #fff;
-  }
+      rgba(155, 0, 250, 1) 100%);
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(90deg,
+  rgba(93, 12, 255, 1) 0%,
+  rgba(155, 0, 250, 1) 100%);
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: #fff;
+}
+
+.edit-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.menu {
+  background: blue;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  border-radius: 10%;
+}
+
+.todo-header {
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  color: blue;
+  background-color: lightgray;
+  height: 300px;
+  width: 10%;
+  margin: 5px 0px;
+  transition: all 0.5s ease-in;
+  margin: 128px 0px;
+  top: 85px;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  position: relative;
+  z-index: 10;
+  opacity: 0.8;
+}
+
+.heading {
+  margin-left: 130px;
+}
+
+.menu-item {
+  margin: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+}

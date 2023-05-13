@@ -1,0 +1,57 @@
+Documentation for Release 2023.2.0.0
+<Dated : 13-May-2023>
+<Type : Documentation>
+<Type-Description : A Guide for understanding the Project Funcionalities and Features>
+
+Below are the mentioned deatils about the Application Features and Funcionalities.
+
+1. Create a Task
+The user can create a task by adding the text content of maximum 40 characters.
+Clicking on the "Add Task" button will add the task into the Task List.
+
+2. Search a Task
+The user can search a task by entering upto maximum 40 characters in the Search Task Bar.
+The reults of search function will contain the tasks which have matching characters in their text content.
+
+3. Rearrange the Task List
+The user can rearrange the task list by simply holding and dragging the task with mouse pointer.
+The list will now be updated with the last order given by the user.
+
+4. Mark the Task as done 
+The user can mark a task as done by clicking on the "Check Mark" icon to the left of the task.
+The task can be marked as undone by again clicking the "Check Mark" icon.
+
+5. Set Reminder for the Task
+The user can set reminders for the task by clicking on the "Caledar" icon and set a due date for that task.
+The due dates will be displayed on the right of each task.
+If the due for a task is passed then the the date will be highlighted in yellow color for indication.
+
+6. Edit the Task
+The user can edit a task by clicking on the "Edit" icon.
+On edit action completion, by clicking the "Update" button the task can be viewed in the task list,
+with the updated text content
+
+7. Delete the Task
+The user can delete a task by clicking on the "Delete" icon.
+Post clicking the "Delete" icon the task will be removed from the task list.
+The deleted cannot be recovered once deletion is complete.
+
+8.Menu Bar
+8.1 "Menu" icon
+On clicking the "Menu" icon Sidebar Menu will be displayed.
+
+8.2 "Close" icon
+On clicking the "Close" icon Sidebar Menu will be disappeared.
+
+8.3 "Done" Option
+This Option will display all the tasks which are marked as completed in the Task List.
+
+8.4 "Pending" Option
+This Option will display all the tasks which are marked as un-completed in the Task List.
+
+8.5 "Show All" Option
+This Option will display all the tasks which are in the Task List.
+
+8.6 "Clear All" Option
+This Option will delete all the tasks in the Task List.
+
